@@ -1,0 +1,11 @@
+query GetLocationOverview ($location: LocationInput!, $radius: Float!, $allowInvalid: Boolean){
+  getLocationOverview(location:$location, radius: $radius, allowInvalid: $allowInvalid){
+    error
+    posts {
+      ...PostFragment
+    }
+    users {
+      ...UserFragment
+    }
+  }
+}

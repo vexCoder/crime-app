@@ -1,0 +1,5 @@
+mutation UploadFile($photo: Upload!, $id: String!){
+  uploadFile(photo:$photo, id:$id){
+    error
+  }
+}

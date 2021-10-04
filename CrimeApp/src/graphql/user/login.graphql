@@ -1,0 +1,9 @@
+mutation Login($options: LoginInput!){
+  login(options: $options){
+    error
+    user {
+      ...UserFragment
+    }
+    token
+  }
+}

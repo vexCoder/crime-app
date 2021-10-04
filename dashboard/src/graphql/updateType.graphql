@@ -1,0 +1,8 @@
+mutation UpdateType($id: ID!, $options: UpdateCrimeTypeInput!){
+  updateType(id:$id, options: $options){
+    error
+    type {
+      ...CrimeTypeFragment
+    }
+  }
+}

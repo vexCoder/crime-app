@@ -1,0 +1,6 @@
+fragment HotlineFragment on Hotline {
+  label
+  code
+  type
+  number
+}

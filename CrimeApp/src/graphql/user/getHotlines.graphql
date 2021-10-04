@@ -1,0 +1,8 @@
+query GetHotlines{
+  getHotlines{
+    error
+    hotlines {
+      ...HotlineFragment
+    }
+  }
+}

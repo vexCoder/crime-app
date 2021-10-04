@@ -1,0 +1,8 @@
+query Status{
+  status{
+    error
+    user {
+      ...UserFragment
+    }
+  }
+}

@@ -1,0 +1,16 @@
+fragment PostFragment on Post {
+  _id
+  type
+  description
+  invalid
+  location {
+    lng
+    lat
+    address
+    country
+    zipcode
+  }
+  user
+  createdAt
+  updatedAt
+}

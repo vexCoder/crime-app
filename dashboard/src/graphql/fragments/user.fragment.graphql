@@ -1,0 +1,24 @@
+fragment UserFragment on User {
+  _id
+  name
+  email
+  password
+  type
+  hotlines {
+    label
+    code
+    type
+    number
+  }
+  tracking
+  currentLoc {
+    lat
+    lng
+  }
+  target {
+    lat
+    lng
+  }
+  createdAt
+  updatedAt
+}

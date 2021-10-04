@@ -1,0 +1,11 @@
+mutation AddHotline($options: HotlineInput!){
+  addHotline(options: $options){
+    error
+    user {
+      ...UserFragment
+    }
+    hotlines {
+      ...HotlineFragment
+    }
+  }
+}

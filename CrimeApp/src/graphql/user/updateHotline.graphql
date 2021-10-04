@@ -1,0 +1,11 @@
+mutation UpdateHotline($query: HotlineInput!, $options: HotlineInput!){
+  updateHotline(query: $query, options: $options){
+    error
+    user {
+      ...UserFragment
+    }
+    hotlines {
+      ...HotlineFragment
+    }
+  }
+}

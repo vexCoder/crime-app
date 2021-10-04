@@ -1,0 +1,11 @@
+mutation DeleteHotline($options: HotlineInput!){
+  deleteHotline(options: $options){
+    error
+    user {
+      ...UserFragment
+    }
+    hotlines {
+      ...HotlineFragment
+    }
+  }
+}

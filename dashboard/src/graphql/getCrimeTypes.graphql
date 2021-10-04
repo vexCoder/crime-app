@@ -1,0 +1,8 @@
+query GetCrimeTypes{
+  getCrimeTypes{
+    error
+    types {
+      ...CrimeTypeFragment
+    }
+  }
+}

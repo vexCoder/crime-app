@@ -1,0 +1,8 @@
+mutation Register($options: RegisterInput!){
+  register(options: $options){
+    error
+    user {
+      ...UserFragment
+    }
+  }
+}

@@ -1,0 +1,8 @@
+mutation InvalidatePost($id: ID!){
+  invalidatePost(id:$id){
+    error
+    post {
+      ...PostFragment
+    }
+  }
+}

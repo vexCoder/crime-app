@@ -1,0 +1,8 @@
+query CheckRadiusNotify ($location: LocationInput!, $radius: Float!){
+  checkRadiusNotify(location:$location, radius: $radius){
+    error
+    notification {
+      crimesNearby
+    }
+  }
+}

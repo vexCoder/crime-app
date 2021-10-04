@@ -1,0 +1,7 @@
+fragment CrimeTypeFragment on CrimeType {
+  _id
+  label
+  color
+  createdAt
+  updatedAt
+}

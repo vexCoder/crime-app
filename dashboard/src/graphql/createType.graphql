@@ -1,0 +1,8 @@
+mutation CreateType($options: CreateCrimeTypeInput!){
+  createType(options: $options){
+    error
+    type {
+      ...CrimeTypeFragment
+    }
+  }
+}

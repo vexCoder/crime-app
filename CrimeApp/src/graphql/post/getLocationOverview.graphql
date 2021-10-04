@@ -1,0 +1,16 @@
+query GetLocationOverview ($location: LocationInput!, $radius: Float!){
+  getLocationOverview(location:$location, radius: $radius){
+    error
+    posts {
+      ...PostFragment
+    }
+    users {
+      ...UserFragment
+    }
+    stats {
+      past6Hours
+      pastHour
+      past30Min
+    }
+  }
+}

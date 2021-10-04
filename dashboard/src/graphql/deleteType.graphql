@@ -1,0 +1,8 @@
+mutation DeleteType($id: ID!){
+  deleteType(id:$id){
+    error
+    type {
+      ...CrimeTypeFragment
+    }
+  }
+}

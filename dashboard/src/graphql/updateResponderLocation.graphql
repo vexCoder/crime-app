@@ -1,0 +1,8 @@
+mutation UpdateResponderLocation ($location: TrackerLocationInput, $target: TrackerLocationInput, $tracking: Boolean) {
+  updateResponderLocation (location: $location, target: $target, tracking: $tracking) {
+    error
+    user {
+      ...UserFragment
+    }
+  }
+}

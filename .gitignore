@@ -1,0 +1,5 @@
+temp
+*/.vscode
+*/__tests__
+*/test
+*/src/generated
