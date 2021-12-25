@@ -39,6 +39,8 @@ import HotlineModal from "./HotlineModal";
 import {
   extractError 
 } from "../../utils/helper";
+import SendIntentAndroid  from "react-native-send-intent";
+
 
 interface HotlineValues {
   ambulance?: string;
@@ -200,6 +202,12 @@ const Hotline = () => {
 
   const handleSubmit = (number?: string) => {
     toast.success(`Calling ${number}`);
+    setTimeout(() => {
+      // Linking.openURL(`tel:${number}`);
+      if(number){
+        SendIntentAndroid.sendPhoneCall(number, true);
+      }
+    }, 1500);
   };
 
   const renderHotline = (v: HotlineDataType, i: number, isUser: boolean) => {
